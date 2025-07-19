@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;/*To remove any extra space from margins*/
+    padding: 0;
+}
+
+nav{
+    font-family: 'ubuntu', 'sans-serif';
+}
+
+nav ul{
+    display: flex;/*moves every item in nav in a horizontal position*/
+    align-items: center;
+    list-style-type: none;/*to remove dots in ul*/
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand img{
+    width: 44px;/*go to browser -> inspect from there you can change pixel and adjust the image size accordingly*/
+    padding: 0 8px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.container{
+    min-height: 72vh;/*75% of height*/
+    background-color: black;
+    color: white;
+    font-family: 'Varela Round', 'sans-serif';
+    display: flex;
+    width: 70%;
+    margin: 23px auto;
+    border-radius: 12px;
+    padding: 34px;
+    background-image: url('Weekend.png');
+}
+
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color: white;
+    bottom: 0;/*moves to the bottom*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;/*to move the play icons to the bottom centre*/
+}
+
+.icons{
+    margin-top: 14px;
+}
+.icons i{
+    cursor: pointer;/*whenever someone hover the cursor on the icones the cursor will change to pointer*/
+}
+
+#myProgressBar{
+    width: 80vw;
+    
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+    
+}
+
+.timestamp{
+    margin: 0 23px;
+    cursor: pointer;
+}
